@@ -1,4 +1,4 @@
-def DockerHubPush(){
+def call(){
   echo 'Pushing the Image to Docker Hub Initiated......'
   withCredentials([usernamePassword(credentialsId:'DockerHubCred',usernameVariable:'DockerHubUser',passwordVariable:'DockerHubPass')]){
   sh 'docker login -u $DockerHubUser -p $DockerHubPass'
