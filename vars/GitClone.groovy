@@ -1,3 +1,3 @@
-def GitClone(){
+def call(){
   git url:"",branch:""
 }
